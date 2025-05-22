@@ -1,0 +1,180 @@
+.intro {
+    overflow: hidden;
+    margin: 0 0 50px 0;
+
+    &__wrapper {
+        overflow: hidden;
+        position: relative;
+        padding: 75px 112px 0 85px;
+
+        @media (max-width: 1370px) {
+            padding: 70px 70px 0 70px;
+        }
+
+        @media (max-width: 1000px) {
+            padding: 50px 50px 0 50px;
+        }
+
+        @media (max-width: 750px) {
+            padding: 30px 30px 0 30px;
+        }
+
+        @media (max-width: 580px) {
+            padding: 130px 20px 0 20px;
+        }
+
+        @media (max-width: 500px) {
+            padding: 16px 16px 0 16px;
+        }
+    }
+
+    .container {
+
+    }
+
+    &__banner {
+        @include image-wrapper;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 105%;
+        z-index: -1;
+    }
+
+    &__info {
+
+    }
+
+    &__aimPic {
+        position: absolute;
+        top: 3%;
+        right: 157px;
+        width: 54%;
+        height: auto;
+
+        @media (max-width: 1370px) {
+            right: 10%;
+        }
+
+        @media (max-width: 580px) {
+            top: 6%;
+            right: 3%;
+            width: 75%;
+        }
+
+        @media (max-width: 500px) {
+            top: 35%;
+            right: 6%;
+            width: 90%;
+        }
+
+        @media (max-width: 350px) {
+            top: 39%;
+        }
+    }
+
+    &__brand {
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 110%;
+        letter-spacing: 0.31em;
+        text-transform: uppercase;
+        color: $white;
+        padding: 50px;
+        background: linear-gradient(180deg, #333 0%, #1d1d1d 100%);
+
+        @media (max-width: 1000px) {
+            font-size: 48px;
+        }
+
+        @media (max-width: 750px) {
+            font-size: 40px;
+        }
+    }
+
+    &__parameter {
+        display: inline-block;
+        width: 100%;
+        padding: 46px;
+        margin: -3px 0 46px 0;
+        border: 5px solid #1d1d1d;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 110%;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+
+        @media (max-width: 1000px) {
+            font-size: 24px;
+        }
+
+        @media (max-width: 750px) {
+            font-size: 20px;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 130%;
+        letter-spacing: 0.17em;
+        text-transform: uppercase;
+        color: $white;
+        padding: 0 5px 0 15px;
+        margin: 0 0 27px 0;
+        z-index: -1;
+
+        @media (max-width: 1370px) {
+            padding: 0;
+        }
+
+        @media (max-width: 1000px) {
+            font-size: 24px;
+        }
+
+        @media (max-width: 750px) {
+            font-size: 20px;
+        }
+
+        @media (max-width: 500px) {
+            margin: 50% 0 27px 0;
+        }
+
+        @media (max-width: 365px) {
+            margin: 43% 0 27px 0;
+        }
+
+        @media (max-width: 350px) {
+            font-size: 16px;
+        }
+    }
+
+    &__titleDesc {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: $white;
+        padding: 0 0 0 16px;
+        margin: 0 0 35px 0;
+
+        @media (max-width: 1370px) {
+            padding: 0;
+        }
+
+        @media (max-width: 350px) {
+            font-size: 16px;
+        }
+    }
+
+    &__name {
+        position: absolute;
+        bottom: -32px;
+        left: 0;
+        width: 100%;
+
+        @media (max-width: 1370px) {
+            bottom: 0;
+        }
+    }
+}
