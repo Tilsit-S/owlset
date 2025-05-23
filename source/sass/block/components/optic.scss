@@ -9,6 +9,26 @@
         width: 100%;
         height: 200px;
         margin: 0 0 150px 0;
+
+        @media (max-width: 1370px) {
+            height: 180px;
+        }
+
+        @media (max-width: 970px) {
+            height: 120px;
+        }
+
+        @media (max-width: 768px) {
+            height: 93px;
+        }
+
+        @media (max-width: 550px) {
+            height: 81px;
+        }
+
+        @media (max-width: 400px) {
+            height: 75px;
+        }
     }
 
     &__number {
@@ -25,19 +45,158 @@
         background: $black;
         margin: 0 50px 0 -45px;
         border: none;
+
+        @media (max-width: 1070px) {
+            font-size: 96px;
+        }
+
+        @media (max-width: 800px) {
+            font-size: 64px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 40px;
+        }
     }
 
     &__title {
         display: inline-flex;
         align-items: center;
         height: 100%;
+        padding: 0 0 0 40px;
         font-weight: 500;
         font-size: 64px;
         line-height: 110%;
         letter-spacing: 0.2em;
         text-transform: uppercase;
-        //padding: 28px 0;
         border-top: 2px solid $black;
         border-bottom: 2px solid $black;
+
+        @media (max-width: 1370px) {
+            padding: 0;
+            font-size: 60px;
+        }
+
+        @media (max-width: 970px) {
+            font-size: 40px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 36px;
+        }
+
+        @media (max-width: 550px) {
+            font-size: 24px;
+        }
+
+        @media (max-width: 400px) {
+            font-size: 20px;
+        }
+    }
+
+    &__infoWrapper {
+        position: relative;
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 0 0 50px 0;
+    }
+
+    &__infoBlock {
+        position: relative;
+        display: flex;
+        flex-flow: column nowrap;
+        font-size: 0;
+        padding: 0 100px;
+    }
+
+    &__banner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    &__textBlock {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 49.5%;
+        margin: 50px 0 0 0;
+
+        &:last-child {
+            margin: 225px 0 77px 0;
+        }
+    }
+
+    &__subTitile {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 110%;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    &__subTitileDesc {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: $white;
+    }
+
+    &__animation-1 {
+        position: absolute;
+        top: 40px;
+        right: 100px;
+        display: flex;
+        width: 460px;
+        height: auto;
+        z-index: 1;
+    }
+
+    &__animation-2 {
+        display: none;
+        position: absolute;
+        top: 40px;
+        right: 100px;
+        display: flex;
+        width: 460px;
+        height: auto;
+        z-index: 1;
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+
+    &__item {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 13.1%;
+        height: fit-content;
+
+        img {
+            padding: 8px;
+            border: 2px solid $black;
+            margin: 0 0 20px 0;
+        }
+    }
+
+    &__value {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 100%;
+    }
+
+    &__valueDesc {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
     }
 }

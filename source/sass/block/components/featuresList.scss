@@ -11,6 +11,14 @@
         @media (max-width: 1370px) {
             gap: 17px 30px;
         }
+
+        @media (max-width: 835px) {
+            gap: 17px 20px;
+        }
+
+        @media (max-width: 550px) {
+            gap: 10px 5px;
+        }
     }
 
     &__item {
@@ -26,6 +34,23 @@
         color: $white;
         background: linear-gradient(180deg, #333 0%, #1d1d1d 100%);
 
+        @media (max-width: 1300px) {
+            padding: 3px 40px 3px 30px;
+        }
+
+        @media (max-width: 1070px) {
+            padding: 3px 28px 3px 30px;
+        }
+
+        @media (max-width: 750px) {
+            width: 48%;
+            padding: 15px 28px 15px 30px;
+        }
+
+        @media (max-width: 550px) {
+            width: 100%;
+        }
+
         &::before {
             position: absolute;
             content: "";
@@ -36,6 +61,16 @@
             height: 18px;
             background: $white;
             transform: rotate(45deg);
+
+            @media (max-width: 1300px) {
+                top: 31px;
+                right: 17px;
+            }
+
+            @media (max-width: 1070px) {
+                height: 10px;
+                top: 25px;
+            }
         }
 
         &::after {
@@ -48,6 +83,16 @@
             height: 18px;
             background: $white;
             transform: rotate(135deg);
+
+            @media (max-width: 1300px) {
+                top: 19px;
+                right: 17px;
+            }
+
+            @media (max-width: 1070px) {
+                height: 10px;
+                top: 19px;
+            }
         }
     }
 
@@ -58,6 +103,20 @@
         letter-spacing: 0.1em;
         text-transform: uppercase;
         margin: 0 24px 0 -45px;
+
+        @media (max-width: 1070px) {
+            font-size: 48px;
+            margin: 0 10px 0 -45px;
+        }
+
+        @media (max-width: 750px) {
+            margin: 0 5px 0 -38px;
+        }
+
+        @media (max-width: 567px) {
+            font-size: 32px;
+            //margin: 0 5px 0 -45px;
+        }
     }
 
     &__name {
@@ -66,5 +125,9 @@
         line-height: 120%;
         letter-spacing: 0.1em;
         text-transform: uppercase;
+
+        @media (max-width: 1370px) {
+            font-size: 14px;
+        }
     }
 }
