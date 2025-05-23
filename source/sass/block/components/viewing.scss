@@ -1,0 +1,73 @@
+.viewing {
+    overflow: hidden;
+
+    &__titleBlock {
+        @include titleBlock;
+    }
+
+    &__number {
+        @include titleNumber;
+    }
+
+    &__title {
+        @include titleText;
+    }
+
+    &__infoWrapper {
+        position: relative;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    &__value {
+        margin: 0 0 -8px 0;
+    }
+
+    &__infoBlock {
+        position: relative;
+        display: flex;
+        flex-flow: column nowrap;
+        font-size: 0;
+        //padding: 0 100px;
+    }
+
+    &__banner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 12%;
+        left: 50%;
+    }
+
+    &__moose {
+        position: relative;
+        top: -328px;
+        left: 0px;
+        width: 100%;
+        height: auto;
+    }
+
+    &__textBlock {
+        color: $white;
+
+        &:first-child {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            flex-flow: column nowrap;
+            margin-top: auto;
+        }
+    }
+
+    &__secondaryBlock {
+        background: linear-gradient(180deg, #333 0%, #1d1d1d 100%);
+    }
+}
